@@ -1,0 +1,139 @@
+body, html{
+  font-family: $font-main;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12.5px;
+  background-color: $white;
+}
+*{
+  &:hover, &:focus{
+    outline: none!important;
+  }
+}
+header{
+  .top-bar{
+    background-color: $blue-b;
+    .red &{
+      background-color: $red;
+    }
+    color: $white;
+    height: 49px;
+    .social{
+      padding-top: 12px;
+      text-align: right; 
+      ul{
+        display: inline-block;
+      }
+      li{
+        display: inline-block;
+        list-style-type: none;
+        padding: 0 5px;
+        a:hover{
+          img{
+            opacity: 0.85;
+          }
+        }
+      }
+    }
+  }
+  .logo{
+    background-color: $red;
+//    float: left;
+    margin: 0;
+    padding: 12px 8px 13px;
+    position: absolute;
+    left: 0;
+    @-moz-document url-prefix() {
+      &{
+        padding-bottom: 12px;
+      }
+    }
+  }
+  .main-bar{
+    height: 64px;
+    .container{
+//      position: relative;
+    }
+  }
+  .navigation{
+    float: left;
+    ul{
+      padding: 0;
+      margin: 0;
+    }
+    li{
+      display: inline-block;
+      list-style-type: none;
+      padding: 25px 26px 21px;
+      text-transform: uppercase;
+      @media (max-width: 1199px) {
+        padding: 25px 26px 21px;
+      }
+      a{
+        color: $text-blue;
+        font-size: 12.5px;
+        .red &{
+          color: $text-red-nav;
+        }
+      }
+      &.active{
+        background-color: $blue-b;
+        a{
+          color: $white;
+        }
+        .red &{
+          background-color: $red;
+        }
+      }
+    }
+  }
+  .form-search{
+//    float: right;
+    margin-top: 15px;
+    position: absolute;
+    right: 15px;
+    .btn-search{
+      display: inline-block;
+      background: url("../images/icon-search-blue.png") no-repeat center center;
+      .red &{
+        -moz-background-image: url("../images/icon-search.png");
+        -webkit-background-image: url("../images/icon-search.png");
+        background-image: url("../images/icon-search.png");
+      }
+      height: 30px;
+      width: 30px;
+      overflow: hidden;
+      color: transparent;
+      cursor: pointer;
+    }
+    .form-search-f{
+      display: none;
+      position: absolute;
+      right: 15px;
+      top: 100%;
+//      width: 80%;
+      width: 500px;
+      background-color: $black;
+      padding: 20px 15px;
+      form{
+        position: relative;
+      }
+      input{
+        width: 100%;
+        border: none;
+        height: 34px;
+        padding: 0 35px 0 5px;
+      }
+      button{
+        background: url("../images/icon-search.png") no-repeat center center;
+        height: 30px;
+        width: 30px;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 2px;
+
+      }
+    }
+  }
+}

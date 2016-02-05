@@ -1,0 +1,51 @@
+#datepicker{
+  width: 94px;
+  height: 26px;
+  color: $text-grey;
+  text-transform: uppercase;
+  font-size: 12.5px;
+  padding: 0 8px;
+  border: none;
+  background: url("../images/arrow.png") no-repeat right 8px top 10px $white;
+}
+#ui-datepicker-div{
+  display: none;
+  background-color: $white;
+  padding: 10px;
+  font-size: 13px;
+  td, th{
+    padding: 3px;
+    text-align: center;
+  }
+  .ui-datepicker-today{
+    background-color: $grey;
+  }
+  .ui-datepicker-prev{
+    float: left;
+    cursor: pointer;
+  }
+  .ui-datepicker-next{
+    float: right;
+    cursor: pointer;
+  }
+  .ui-datepicker-title{
+    float: none;
+    text-align: center;
+  }
+  .ui-datepicker-close{
+    background-color: $red;
+    color: $white;
+    border: none;
+  }
+  button{
+    &.ui-datepicker-current{
+      background-color: $grey;
+      color: $text-red;
+      border: none;
+      display: none;
+    }
+  }
+  .ui-datepicker-buttonpane{
+    text-align: right;
+  }
+}

@@ -1,0 +1,48 @@
+footer{
+  padding-top: 30px;
+  background-color: $grey;
+  color: $text-black;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  h3{
+    font-size: 12.5px;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  ul{
+    padding: 0;
+  }
+  li{
+    display: inline-block;
+  }
+  .site-map{
+    li{
+      padding-right: 10px;
+      a{
+        text-transform: uppercase;
+        color: inherit;
+      }
+    }
+  }
+  .social{
+    li{
+      padding-right: 10px;
+      a:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+  .copyright{
+    background-color: $blue-b;
+    padding: 15px 0 5px;
+    p{
+      color: $white;
+    }
+    .red &{
+      background-color: $red;
+    }
+  }
+}

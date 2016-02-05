@@ -1,51 +1,646 @@
-#datepicker{
-  width: 94px;
-  height: 26px;
-  color: $text-grey;
-  text-transform: uppercase;
-  font-size: 12.5px;
-  padding: 0 8px;
-  border: none;
-  background: url("../images/arrow.png") no-repeat right 8px top 10px $white;
+.container {
+  @media (min-width: 1361px) {
+    width: 1230px;
+  }
 }
-#ui-datepicker-div{
-  display: none;
-  background-color: $white;
-  padding: 10px;
-  font-size: 13px;
-  td, th{
-    padding: 3px;
-    text-align: center;
+
+#main {
+  background-color: $black;
+  color: $white;
+
+  p {
+    font-size: 12.5px;
   }
-  .ui-datepicker-today{
-    background-color: $grey;
+}
+
+.form-game-cal {
+  padding: 0 6px;
+  margin-top: 13px;
+}
+
+.game-box {
+  background-color: $grey;
+  margin-top: 2px;
+
+  ul {
+    padding: 1px 0 0 117px;
+    margin: 0;
+    position: relative;
+
+    @include clearfix-cs;
   }
-  .ui-datepicker-prev{
+
+  li {
     float: left;
-    cursor: pointer;
-  }
-  .ui-datepicker-next{
-    float: right;
-    cursor: pointer;
-  }
-  .ui-datepicker-title{
-    float: none;
-    text-align: center;
-  }
-  .ui-datepicker-close{
-    background-color: $red;
-    color: $white;
-    border: none;
-  }
-  button{
-    &.ui-datepicker-current{
+
+    //display: inline-block;
+    list-style-type: none;
+    padding: 7px 7px 6px;
+    width: 107px;
+    margin: 0 0 0 0;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    font-size: 12.5px;
+
+    a {
+      display: block;
+    }
+
+    @media (max-width: 1360px) {
+      width: 102px;
+    }
+
+    span {
+      vertical-align: middle;
+      display: inline-block;
+      color: $text-grey;
+    }
+
+    &.calendar {
+      width: 117px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:nth-child(2n+1) {
       background-color: $grey;
-      color: $text-red;
-      border: none;
-      display: none;
+    }
+
+    &:nth-child(2n) {
+      background-color: $white;
+    }
+
+    &:nth-child(2), &:nth-child(12) {
+      width: 120px;
+
+      @media (max-width: 1360px) {
+        width: 105px;
+      }
+    }
+
+    &.border-l {
+      border-left: 2px solid $red;
+      font-weight: bold;
+
+      span {
+        color: $text-black;
+      }
+    }
+
+    &.border-r {
+      border-right: 2px solid $red;
+      font-weight: bold;
+
+      span {
+        color: $text-black;
+      }
     }
   }
-  .ui-datepicker-buttonpane{
-    text-align: right;
+
+  .logo-in {
+    float: left;
+  }
+
+  .name-in {
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    padding-top: 3px;
+  }
+
+  .score {
+    float: right;
+    padding-top: 3px;
+  }
+
+  .menu-box.two {
+    .item {
+      display: block;
+      margin: 0 -2px;
+
+      &.border-l {
+        border-left: 2px solid $blue-b;
+
+        .red & {
+          border-left: 2px solid $red;
+        }
+      }
+
+      &.border-r {
+        border-right: 2px solid $blue-b;
+
+        .red & {
+          border-right: 2px solid $red;
+        }
+      }
+    }
+
+    li {
+      padding: 0;
+
+      a {
+        @include clearfix-cs;
+
+        padding: 7px 7px 6px;
+      }
+    }
+  }
+}
+
+.banner {
+  .info {
+    padding: 20px 15px 5px;
+
+    h2 {
+      font-size: 20.83px;
+      font-weight: bold;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.btn-link {
+  margin-bottom: 24px;
+
+  a {
+    display: block;
+    padding: 20px;
+    font-size: 12.5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover, &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  & {
+    a {
+      background-color: $blue-b;
+      color: $white;
+    }
+  }
+
+  .red & {
+    a {
+      background-color: $red;
+      color: $white;
+    }
+  }
+
+  &.grey {
+    a {
+      background-color: $grey-b;
+      color: $black;
+    }
+  }
+}
+
+.row {
+  margin: 0 -11px;
+}
+
+.col-l, .col-r {
+  padding: 0 11px;
+}
+
+.block {
+  margin-bottom: 22px;
+
+  p {
+    color: $text-grey;
+  }
+
+  .image, .video {
+    img {
+      width: 100%;
+    }
+  }
+
+  .heading {
+    padding: 12px 8px 12px;
+    background-color: $grey;
+
+    h3 {
+      font-size: 12.5px;
+      color: $text-black;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      font-weight: bold;
+
+      a {
+        color: inherit;
+      }
+    }
+
+    .date {
+      font-style: italic;
+      margin: 0;
+    }
+  }
+
+  .content {
+    background-color: $white;
+    padding: 12px 8px 12px;
+  }
+
+  .link {
+    font-size: 12.5px;
+    font-style: italic;
+    color: $text-blue;
+
+    .red & {
+      color: $red;
+    }
+  }
+}
+
+.table-record {
+  width: 100%;
+  background-color: $grey;
+
+  th, td {
+    padding: 10px 15px;
+    color: $text-black;
+
+    &.logo-in {
+      padding: 10px 0;
+    }
+
+    &.record {
+      text-align: right;
+    }
+
+    &.no {
+      text-align: center;
+    }
+  }
+
+  th {
+    background-color: $grey-b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: normal;
+  }
+
+  td {
+    border-bottom: 1px solid $grey-b;
+  }
+}
+
+.ham {
+  padding: 5px 5px 0;
+  cursor: pointer;
+  width: 62px;
+
+  .line-ham {
+    display: block;
+    width: 50px;
+    margin-bottom: 5px;
+    height: 5px;
+  }
+}
+
+#menu-mb {
+  display: none;
+
+  &.ham {
+    border: 1px solid $blue-b;
+
+    .red & {
+      border: 1px solid $red;
+    }
+
+    .line-ham {
+      background-color: $blue-b;
+
+      .red & {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+#menu-game-box {
+  display: none;
+
+  &.ham {
+    border: 1px solid $black;
+
+    .line-ham {
+      background-color: $black;
+    }
+  }
+}
+
+.boxscore-page {
+  .main-content {
+    background-color: $white;
+    padding-bottom: 60px;
+  }
+
+  .paddingtop2 {
+    padding-top: 2px;
+  }
+
+  footer {
+    border-top: 4px solid $blue-b;
+  }
+
+  .top-bar {
+    background-color: $blue-b;
+    padding: 10px 15px 2px;
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      display: inline-table;
+      padding-right: 30px;
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &.red {
+    .top-bar {
+      background-color: $red;
+    }
+
+    footer {
+      border-top: 4px solid $red;
+    }
+  }
+}
+
+.table-score {
+  color: $text-black-score-p;
+
+  ul {
+    padding: 0;
+
+    @include clearfix-cs;
+  }
+
+  li {
+    display: inline-table;
+    padding-right: 35px;
+  }
+
+  .title-team {
+    background-color: $grey-light;
+    padding: 0 5px;
+    font-size: 12.5px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .info-teams {
+    padding: 15px 15px 0;
+    margin: 0;
+
+    .image {
+      float: left;
+      background-color: $grey-light;
+      margin-right: 10px;
+    }
+
+    .content {
+      float: right;
+
+      h2 {
+        margin-bottom: 0;
+        font-size: 34px;
+      }
+    }
+  }
+
+  .info-table-score {
+    padding: 15px;
+
+    table {
+      th {
+        background-color: $grey-light;
+        padding: 2px 15px;
+      }
+
+      td {
+        padding: 5px 15px;
+
+        &:nth-child(1) {
+          padding-left: 0;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 12.5px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+
+  .table-team-info {
+    width: 100%;
+
+    th, td {
+      padding: 4px 15px;
+      text-align: left;
+    }
+
+    th {
+      background-color: $grey-b;
+    }
+
+    tr {
+      &:nth-child(2n) {
+        td {
+          background-color: $grey-light;
+        }
+      }
+    }
+  }
+}
+
+.spacing20 {
+  height: 20px;
+}
+
+.profile-page {
+  #main {
+    .top-bar {
+      background-color: $grey-b;
+      padding: 15px;
+
+      @include clearfix-cs;
+
+      h2 {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      h3 {
+        font-size: 12.5px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .logo-pf {
+        float: left;
+        padding-right: 18px;
+        border-right: 2px solid $black;
+        margin-right: 15px;
+
+        img {
+          vertical-align: sub;
+          margin-right: 10px;
+        }
+
+        .score {
+          font-size: 35px;
+          color: $text-black;
+          font-weight: bold;
+          line-height: 1;
+        }
+      }
+
+      .name-pf {
+        color: $text-black;
+      }
+    }
+
+    .info {
+      background: url("../images/bg-info.png") no-repeat right 12px top 0 $grey-light;
+      padding: 15px 15px 12px;
+      color: $text-black;
+
+      @include clearfix-cs;
+
+      .avatar {
+        float: left;
+        margin-right: 15px;
+      }
+
+      p {
+        color: $text-black;
+        line-height: 1.3;
+        margin-bottom: 7px;
+      }
+    }
+
+    .nav-tabs {
+      padding-left: 15px;
+      background: $white;
+
+      > li > a {
+        @include border-radius-circle(0);
+
+        font-size: 12.5px;
+        text-transform: uppercase;
+        color: $text-black;
+        font-weight: bold;
+        background: url("../images/bg-grey-light.png") repeat 0 0;
+        padding: 20px 15px 18px;
+        line-height: 1;
+        border: 1px solid $grey-b;
+        border-left: none;
+      }
+
+      li {
+        margin-right: -2px;
+
+        &.active {
+          a {
+            background: $blue-b;
+            color: $text-white;
+          }
+        }
+
+        &:first-child {
+          a {
+            border-left: 1px solid $grey-b;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      background-color: $white;
+      min-height: 600px;
+
+      table {
+        width: 100%;
+      }
+
+      th {
+        background-color: $blue-b;
+      }
+
+      th, td {
+        padding: 20px 5px;
+
+        &:first-child {
+          padding-left: 20px;
+        }
+      }
+
+      td {
+        color: $text-black;
+      }
+
+      tr {
+        &:nth-child(2n+1) {
+          td {
+            background-color: $grey-light;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    border-top: 4px solid $blue-b;
+  }
+
+  &.red {
+    #main {
+      .nav-tabs {
+        li {
+          &.active {
+            a {
+              background: $red;
+            }
+          }
+        }
+      }
+
+      .tab-content {
+        th {
+          background-color: $red;
+        }
+      }
+    }
+
+    footer {
+      border-top: 4px solid $red;
+    }
   }
 }

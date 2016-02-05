@@ -1,15 +1,14 @@
-@mixin font-face($style-name, $file, $fontWeight,$fontStyle, $category:"") {
+@mixin font-face($style-name, $file, $fontWeight, $fontStyle, $category: "") {
   $filepath: "../fonts/" + $file;
+
   @font-face {
     font-family: "#{$style-name}";
     src: url($filepath + ".eot");
-    src: url($filepath + ".eot?#iefix") format('embedded-opentype'),
-    url($filepath + ".woff") format('woff'),
-    url($filepath + ".ttf")  format('truetype'),
-    url($filepath + ".svg#" + $style-name + "") format('svg');
+    src: url($filepath + ".eot?#iefix") format("embedded-opentype"), url($filepath + ".woff") format("woff"), url($filepath + ".ttf") format("truetype"), url($filepath + ".svg#" + $style-name + "") format("svg");
     font-weight: $fontWeight;
-    font-style: $fontStyle
+    font-style: $fontStyle;
   }
+
   %#{$style-name} {
     font: {
       @if $category != "" {
@@ -19,15 +18,17 @@
         family: "#{$style-name}";
         weight: normal;
       }
-    }
+    };
   }
 }
-@mixin border-radius-circle($radius){
+
+@mixin border-radius-circle($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
 }
-@mixin tranform-obj($deg){
+
+@mixin tranform-obj($deg) {
   -webkit-transform: rotate($deg);
   -moz-transform: rotate($deg);
   -ms-transform: rotate($deg);
@@ -35,23 +36,28 @@
   transform: rotate($deg);
 }
 
-@mixin clearfix-cs(){
+@mixin clearfix-cs {
   overflow: hidden;
-  &:after{
+
+  &:after {
     clear: both;
   }
-  &:before{
+
+  &:before {
     display: table;
     content: "";
   }
 }
-@mixin btn-normal(){
+
+@mixin btn-normal {
   @include border-radius-circle(4px);
+
   border: none;
 }
-@mixin box-shadow(){
-  -o-box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-  -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-  box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+
+@mixin box-shadow {
+  -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }

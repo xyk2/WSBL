@@ -1,130 +1,162 @@
-body, html{
+body, html {
   font-family: $font-main;
   font-weight: normal;
   font-style: normal;
   font-size: 12.5px;
   background-color: $white;
 }
-*{
-  &:hover, &:focus{
-    outline: none!important;
+
+* {
+  &:hover, &:focus {
+    outline: none !important;
   }
 }
-header{
-  .top-bar{
+
+header {
+  .top-bar {
     background-color: $blue-b;
-    .red &{
+
+    .red & {
       background-color: $red;
     }
+
     color: $white;
     height: 49px;
-    .social{
+
+    .social {
       padding-top: 12px;
-      text-align: right; 
-      ul{
+      text-align: right;
+
+      ul {
         display: inline-block;
       }
-      li{
+
+      li {
         display: inline-block;
         list-style-type: none;
         padding: 0 5px;
-        a:hover{
-          img{
+
+        a:hover {
+          img {
             opacity: 0.85;
           }
         }
       }
     }
   }
-  .logo{
+
+  .logo {
     background-color: $red;
-//    float: left;
+
+    //    float: left;
     margin: 0;
     padding: 12px 8px 13px;
     position: absolute;
     left: 0;
+
     @-moz-document url-prefix() {
-      &{
+      & {
         padding-bottom: 12px;
       }
     }
   }
-  .main-bar{
+
+  .main-bar {
     height: 64px;
-    .container{
-//      position: relative;
+
+    .container {
+      //      position: relative;
+   
     }
   }
-  .navigation{
+
+  .navigation {
     float: left;
-    ul{
+
+    ul {
       padding: 0;
       margin: 0;
     }
-    li{
+
+    li {
       display: inline-block;
       list-style-type: none;
       padding: 25px 26px 21px;
       text-transform: uppercase;
+
       @media (max-width: 1199px) {
         padding: 25px 26px 21px;
       }
-      a{
+
+      a {
         color: $text-blue;
         font-size: 12.5px;
-        .red &{
+
+        .red & {
           color: $text-red-nav;
         }
       }
-      &.active{
+
+      &.active {
         background-color: $blue-b;
-        a{
+
+        a {
           color: $white;
         }
-        .red &{
+
+        .red & {
           background-color: $red;
         }
       }
     }
   }
-  .form-search{
-//    float: right;
+
+  .form-search {
+    //    float: right;
     margin-top: 15px;
     position: absolute;
     right: 15px;
-    .btn-search{
+
+    .btn-search {
       display: inline-block;
       background: url("../images/icon-search-blue.png") no-repeat center center;
-      .red &{
+
+      .red & {
         -moz-background-image: url("../images/icon-search.png");
         -webkit-background-image: url("../images/icon-search.png");
         background-image: url("../images/icon-search.png");
       }
+
       height: 30px;
       width: 30px;
       overflow: hidden;
       color: transparent;
       cursor: pointer;
     }
-    .form-search-f{
+
+    .form-search-f {
       display: none;
       position: absolute;
       right: 15px;
       top: 100%;
-//      width: 80%;
+
+      //      width: 80%;
       width: 500px;
       background-color: $black;
       padding: 20px 15px;
-      form{
+
+      form {
         position: relative;
       }
-      input{
+
+      input {
         width: 100%;
         border: none;
         height: 34px;
         padding: 0 35px 0 5px;
       }
-      button{
+
+      button {
         background: url("../images/icon-search.png") no-repeat center center;
         height: 30px;
         width: 30px;
@@ -132,7 +164,6 @@ header{
         position: absolute;
         right: 0;
         top: 2px;
-
       }
     }
   }

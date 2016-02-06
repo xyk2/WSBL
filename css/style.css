@@ -160,11 +160,9 @@ body, html {
   outline: none !important; }
 
 header .top-bar {
-  background-color: #1775d7;
+  background-color: #d12229;
   color: #ffffff;
   height: 49px; }
-  .red header .top-bar {
-    background-color: #d12229; }
   header .top-bar .social {
     padding-top: 12px;
     text-align: right; }
@@ -201,32 +199,24 @@ header .navigation {
       header .navigation li {
         padding: 25px 26px 21px; } }
     header .navigation li a {
-      color: #337ab7;
+      color: #a23535;
       font-size: 12.5px; }
-      .red header .navigation li a {
-        color: #a23535; }
     header .navigation li.active {
-      background-color: #1775d7; }
+      background-color: #d12229; }
       header .navigation li.active a {
         color: #ffffff; }
-      .red header .navigation li.active {
-        background-color: #d12229; }
 header .form-search {
   margin-top: 15px;
   position: absolute;
   right: 15px; }
   header .form-search .btn-search {
     display: inline-block;
-    background: url("../images/icon-search-blue.png") no-repeat center center;
+    background-image: url("../images/icon-search.png") no-repeat center center;
     height: 30px;
     width: 30px;
     overflow: hidden;
     color: transparent;
     cursor: pointer; }
-    .red header .form-search .btn-search {
-      -moz-background-image: url("../images/icon-search.png");
-      -webkit-background-image: url("../images/icon-search.png");
-      background-image: url("../images/icon-search.png"); }
   header .form-search .form-search-f {
     display: none;
     position: absolute;
@@ -308,7 +298,8 @@ header .form-search {
 
 .game-box {
   background-color: #eeeeee;
-  margin-top: 2px; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
   .game-box ul {
     padding: 1px 0 0 117px;
     margin: 0;
@@ -375,13 +366,9 @@ header .form-search {
     display: block;
     margin: 0 -2px; }
     .game-box .menu-box.two .item.border-l {
-      border-left: 2px solid #1775d7; }
-      .red .game-box .menu-box.two .item.border-l {
-        border-left: 2px solid #d12229; }
+      border-left: 2px solid #d12229; }
     .game-box .menu-box.two .item.border-r {
-      border-right: 2px solid #1775d7; }
-      .red .game-box .menu-box.two .item.border-r {
-        border-right: 2px solid #d12229; }
+      border-right: 2px solid #d12229; }
   .game-box .menu-box.two li {
     padding: 0; }
     .game-box .menu-box.two li a {
@@ -416,9 +403,6 @@ header .form-search {
       text-decoration: none;
       outline: none; }
   .btn-link a {
-    background-color: #1775d7;
-    color: #ffffff; }
-  .red .btn-link a {
     background-color: #d12229;
     color: #ffffff; }
   .btn-link.grey a {
@@ -457,9 +441,7 @@ header .form-search {
   .block .link {
     font-size: 12.5px;
     font-style: italic;
-    color: #337ab7; }
-    .red .block .link {
-      color: #d12229; }
+    color: #d12229; }
 
 .table-record {
   width: 100%;
@@ -494,13 +476,9 @@ header .form-search {
 #menu-mb {
   display: none; }
   #menu-mb.ham {
-    border: 1px solid #1775d7; }
-    .red #menu-mb.ham {
-      border: 1px solid #d12229; }
+    border: 1px solid #d12229; }
     #menu-mb.ham .line-ham {
-      background-color: #1775d7; }
-      .red #menu-mb.ham .line-ham {
-        background-color: #d12229; }
+      background-color: #d12229; }
 
 #menu-game-box {
   display: none; }
@@ -515,9 +493,9 @@ header .form-search {
 .boxscore-page .paddingtop2 {
   padding-top: 2px; }
 .boxscore-page footer {
-  border-top: 4px solid #1775d7; }
+  border-top: 4px solid #d12229; }
 .boxscore-page .top-bar {
-  background-color: #1775d7;
+  background-color: #d12229;
   padding: 10px 15px 2px; }
   .boxscore-page .top-bar ul {
     padding: 0; }
@@ -526,10 +504,6 @@ header .form-search {
     padding-right: 30px; }
     .boxscore-page .top-bar li p {
       margin-bottom: 5px; }
-.boxscore-page.red .top-bar {
-  background-color: #d12229; }
-.boxscore-page.red footer {
-  border-top: 4px solid #d12229; }
 
 .table-score {
   color: #171724; }
@@ -658,7 +632,7 @@ header .form-search {
   .profile-page #main .nav-tabs li {
     margin-right: -2px; }
     .profile-page #main .nav-tabs li.active a {
-      background: #1775d7;
+      background: #d12229;
       color: #ffffff; }
     .profile-page #main .nav-tabs li:first-child a {
       border-left: 1px solid #c4c4c4; }
@@ -668,7 +642,7 @@ header .form-search {
   .profile-page #main .tab-content table {
     width: 100%; }
   .profile-page #main .tab-content th {
-    background-color: #1775d7; }
+    background-color: #d12229; }
   .profile-page #main .tab-content th, .profile-page #main .tab-content td {
     padding: 20px 5px; }
     .profile-page #main .tab-content th:first-child, .profile-page #main .tab-content td:first-child {
@@ -678,12 +652,6 @@ header .form-search {
   .profile-page #main .tab-content tr:nth-child(2n+1) td {
     background-color: #ececec; }
 .profile-page footer {
-  border-top: 4px solid #1775d7; }
-.profile-page.red #main .nav-tabs li.active a {
-  background: #d12229; }
-.profile-page.red #main .tab-content th {
-  background-color: #d12229; }
-.profile-page.red footer {
   border-top: 4px solid #d12229; }
 
 footer {
@@ -713,12 +681,10 @@ footer {
     footer .social li a:hover {
       opacity: 0.8; }
   footer .copyright {
-    background-color: #1775d7;
+    background-color: #d12229;
     padding: 15px 0 5px; }
     footer .copyright p {
       color: #ffffff; }
-    .red footer .copyright {
-      background-color: #d12229; }
 
 @media (min-width: 1361px) {
   .col-8 {
@@ -842,10 +808,7 @@ footer {
       padding: 15px 5px; }
     .profile-page #main .nav-tabs li.active a {
       background: transparent;
-      color: #1775d7; }
-  .profile-page.red #main .nav-tabs li.active a {
-    background: transparent;
-    color: #d12229; } }
+      color: #d12229; } }
 @media (max-width: 480px) {
   .menu-box li {
     width: 50%; }
@@ -854,5 +817,3 @@ footer {
 @media (max-width: 420px) {
   .table-score .info-teams .content h2 {
     font-size: 18px; } }
-
-/*# sourceMappingURL=style.css.map */

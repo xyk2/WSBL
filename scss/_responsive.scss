@@ -210,27 +210,13 @@
           &.active {
             a {
               background: transparent;
-              color: $blue-b;
+              color: $red;
             }
           }
         }
       }
     }
 
-    &.red {
-      #main {
-        .nav-tabs {
-          li {
-            &.active {
-              a {
-                background: transparent;
-                color: $red;
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }
 

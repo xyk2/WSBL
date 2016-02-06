@@ -14,11 +14,7 @@ body, html {
 
 header {
   .top-bar {
-    background-color: $blue-b;
-
-    .red & {
-      background-color: $red;
-    }
+    background-color: $red;
 
     color: $white;
     height: 49px;
@@ -89,23 +85,15 @@ header {
       }
 
       a {
-        color: $text-blue;
+        color: $text-red-nav;
         font-size: 12.5px;
-
-        .red & {
-          color: $text-red-nav;
-        }
       }
 
       &.active {
-        background-color: $blue-b;
+        background-color: $red;
 
         a {
           color: $white;
-        }
-
-        .red & {
-          background-color: $red;
         }
       }
     }
@@ -119,13 +107,8 @@ header {
 
     .btn-search {
       display: inline-block;
-      background: url("../images/icon-search-blue.png") no-repeat center center;
+      background-image: url("../images/icon-search.png") no-repeat center center;
 
-      .red & {
-        -moz-background-image: url("../images/icon-search.png");
-        -webkit-background-image: url("../images/icon-search.png");
-        background-image: url("../images/icon-search.png");
-      }
 
       height: 30px;
       width: 30px;

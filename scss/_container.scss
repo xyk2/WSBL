@@ -20,7 +20,8 @@
 
 .game-box {
   background-color: $grey;
-  margin-top: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   ul {
     padding: 1px 0 0 117px;
@@ -120,19 +121,11 @@
       margin: 0 -2px;
 
       &.border-l {
-        border-left: 2px solid $blue-b;
-
-        .red & {
-          border-left: 2px solid $red;
-        }
+        border-left: 2px solid $red;
       }
 
       &.border-r {
-        border-right: 2px solid $blue-b;
-
-        .red & {
-          border-right: 2px solid $red;
-        }
+        border-right: 2px solid $red;
       }
     }
 
@@ -185,13 +178,6 @@
   }
 
   & {
-    a {
-      background-color: $blue-b;
-      color: $white;
-    }
-  }
-
-  .red & {
     a {
       background-color: $red;
       color: $white;
@@ -257,11 +243,7 @@
   .link {
     font-size: 12.5px;
     font-style: italic;
-    color: $text-blue;
-
-    .red & {
-      color: $red;
-    }
+    color: $red;
   }
 }
 
@@ -315,18 +297,11 @@
   display: none;
 
   &.ham {
-    border: 1px solid $blue-b;
-
-    .red & {
-      border: 1px solid $red;
-    }
+    border: 1px solid $red;
 
     .line-ham {
-      background-color: $blue-b;
+      background-color: $red;
 
-      .red & {
-        background-color: $red;
-      }
     }
   }
 }
@@ -354,11 +329,11 @@
   }
 
   footer {
-    border-top: 4px solid $blue-b;
+    border-top: 4px solid $red;
   }
 
   .top-bar {
-    background-color: $blue-b;
+    background-color: $red;
     padding: 10px 15px 2px;
 
     ul {
@@ -372,16 +347,6 @@
       p {
         margin-bottom: 5px;
       }
-    }
-  }
-
-  &.red {
-    .top-bar {
-      background-color: $red;
-    }
-
-    footer {
-      border-top: 4px solid $red;
     }
   }
 }
@@ -569,7 +534,7 @@
 
         &.active {
           a {
-            background: $blue-b;
+            background: $red;
             color: $text-white;
           }
         }
@@ -591,7 +556,7 @@
       }
 
       th {
-        background-color: $blue-b;
+        background-color: $red;
       }
 
       th, td {
@@ -617,30 +582,6 @@
   }
 
   footer {
-    border-top: 4px solid $blue-b;
-  }
-
-  &.red {
-    #main {
-      .nav-tabs {
-        li {
-          &.active {
-            a {
-              background: $red;
-            }
-          }
-        }
-      }
-
-      .tab-content {
-        th {
-          background-color: $red;
-        }
-      }
-    }
-
-    footer {
-      border-top: 4px solid $red;
-    }
+    border-top: 4px solid $red;
   }
 }

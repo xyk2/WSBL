@@ -167,13 +167,14 @@ header .top-bar {
     padding-top: 12px;
     text-align: right; }
     header .top-bar .social ul {
-      display: inline-block; }
+      display: inline-block;
+      padding-right: 10px; }
     header .top-bar .social li {
       display: inline-block;
       list-style-type: none;
       padding: 0 5px; }
       header .top-bar .social li a:hover img {
-        opacity: 0.85; }
+        opacity: 0.8; }
 header .logo {
   background-color: #d12229;
   margin: 0;
@@ -193,14 +194,14 @@ header .navigation {
   header .navigation li {
     display: inline-block;
     list-style-type: none;
-    padding: 25px 26px 21px;
+    padding: 21px 26px 18px;
     text-transform: uppercase; }
     @media (max-width: 1199px) {
       header .navigation li {
-        padding: 25px 26px 21px; } }
+        padding: 21px 26px 18px; } }
     header .navigation li a {
       color: #a23535;
-      font-size: 12.5px; }
+      font-size: 18px; }
     header .navigation li.active {
       background-color: #d12229; }
       header .navigation li.active a {
@@ -714,6 +715,9 @@ footer {
   header .navigation {
     float: left; }
     header .navigation li {
+      padding: 0; }
+    header .navigation a {
+      display: block;
       padding: 15px 26px 10px; }
   header .form-search {
     display: none; }

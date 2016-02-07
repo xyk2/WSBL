@@ -25,6 +25,7 @@ header {
 
       ul {
         display: inline-block;
+        padding-right: 10px;
       }
 
       li {
@@ -34,7 +35,7 @@ header {
 
         a:hover {
           img {
-            opacity: 0.85;
+            opacity: 0.8;
           }
         }
       }
@@ -43,8 +44,6 @@ header {
 
   .logo {
     background-color: $red;
-
-    //    float: left;
     margin: 0;
     padding: 12px 8px 13px;
     position: absolute;
@@ -61,8 +60,6 @@ header {
     height: 64px;
 
     .container {
-      //      position: relative;
-   
     }
   }
 
@@ -77,16 +74,16 @@ header {
     li {
       display: inline-block;
       list-style-type: none;
-      padding: 25px 26px 21px;
+      padding: 21px 26px 18px;
       text-transform: uppercase;
 
       @media (max-width: 1199px) {
-        padding: 25px 26px 21px;
+        padding: 21px 26px 18px;
       }
 
       a {
         color: $text-red-nav;
-        font-size: 12.5px;
+        font-size: 18px;
       }
 
       &.active {

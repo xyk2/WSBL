@@ -154,7 +154,8 @@ body, html {
   font-weight: normal;
   font-style: normal;
   font-size: 15px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  overflow-x: hidden; }
 
 *:hover, *:focus {
   outline: none !important; }
@@ -472,68 +473,53 @@ header .form-search {
 .boxscore-page .main-content {
   background-color: #ffffff;
   padding-bottom: 60px; }
-  .boxscore-page .main-content .top-bar {
+  .boxscore-page .main-content .top-bar ul {
     background-color: #d12229;
-    padding: 10px 15px 2px;
+    padding: 10px 15px 5px;
     min-height: 74px; }
-    .boxscore-page .main-content .top-bar ul {
-      padding: 0; }
-    .boxscore-page .main-content .top-bar li {
-      display: inline-table;
-      padding-right: 30px; }
-      .boxscore-page .main-content .top-bar li:first-child {
-        float: left; }
-      .boxscore-page .main-content .top-bar li h2 {
-        font-size: 31px;
-        line-height: 50px; }
-      .boxscore-page .main-content .top-bar li p {
-        margin-bottom: 5px; }
+  .boxscore-page .main-content .top-bar li {
+    display: inline-table;
+    padding-right: 30px; }
+    .boxscore-page .main-content .top-bar li:first-child {
+      float: left; }
+    .boxscore-page .main-content .top-bar li h2 {
+      font-size: 31px;
+      line-height: 50px; }
+    .boxscore-page .main-content .top-bar li p {
+      margin-bottom: 5px; }
 
 .table-score {
   color: #3a3a3a; }
-  .table-score ul {
-    padding: 0;
-    overflow: hidden; }
-    .table-score ul:after {
-      clear: both; }
-    .table-score ul:before {
-      display: table;
-      content: ""; }
   .table-score li {
     display: inline-table;
     padding-right: 35px; }
+  .table-score ul {
+    padding: 0; }
   .table-score .title-team {
     background-color: #f3f3f3;
-    padding: 0 5px;
+    font-weight: bold; }
+  .table-score .info-teams .image {
+    float: left;
+    background-color: #f3f3f3;
+    margin-right: 10px; }
+  .table-score .info-teams .content {
+    float: right; }
+    .table-score .info-teams .content h2 {
+      margin-bottom: 0;
+      font-size: 34px; }
+  .table-score .info-table-score table th {
+    background-color: #f3f3f3;
+    padding: 2px 15px; }
+  .table-score .info-table-score table td {
+    padding: 5px 15px; }
+    .table-score .info-table-score table td:nth-child(1) {
+      padding-left: 0; }
+  .table-score .info-table-score h3 {
+    text-transform: uppercase;
     font-weight: bold;
-    margin: 0; }
-  .table-score .info-teams {
-    padding: 15px 15px 0;
-    margin: 0; }
-    .table-score .info-teams .image {
-      float: left;
-      background-color: #f3f3f3;
-      margin-right: 10px; }
-    .table-score .info-teams .content {
-      float: right; }
-      .table-score .info-teams .content h2 {
-        margin-bottom: 0;
-        font-size: 34px; }
-  .table-score .info-table-score {
-    padding: 15px; }
-    .table-score .info-table-score table th {
-      background-color: #f3f3f3;
-      padding: 2px 15px; }
-    .table-score .info-table-score table td {
-      padding: 5px 15px; }
-      .table-score .info-table-score table td:nth-child(1) {
-        padding-left: 0; }
-    .table-score .info-table-score h3 {
-      text-transform: uppercase;
-      font-weight: bold;
-      margin-bottom: 8px; }
-    .table-score .info-table-score p {
-      margin-bottom: 8px; }
+    margin-bottom: 8px; }
+  .table-score .info-table-score p {
+    margin-bottom: 8px; }
   .table-score .table-team-info {
     width: 100%; }
     .table-score .table-team-info th, .table-score .table-team-info td {

@@ -296,12 +296,10 @@
     padding-bottom: 60px;
 
     .top-bar {
-      background-color: $global-theme-color;
-      padding: 10px 15px 2px;
-      min-height: 74px;
-
       ul {
-        padding: 0;
+        background-color: $global-theme-color;
+        padding: 10px 15px 5px;
+        min-height: 74px;
       }
 
       li {
@@ -328,28 +326,19 @@
 .table-score {
   color: $text-black;
 
-  ul {
-    padding: 0;
-
-    @include clearfix-cs;
-  }
-
   li {
     display: inline-table;
     padding-right: 35px;
   }
-
+  ul {
+    padding: 0;
+  }
   .title-team {
     background-color: $grey-light;
-    padding: 0 5px;
     font-weight: bold;
-    margin: 0;
   }
 
   .info-teams {
-    padding: 15px 15px 0;
-    margin: 0;
-
     .image {
       float: left;
       background-color: $grey-light;
@@ -367,8 +356,6 @@
   }
 
   .info-table-score {
-    padding: 15px;
-
     table {
       th {
         background-color: $grey-light;

@@ -143,18 +143,14 @@
 
 .banner {
   .info {
-    padding: 20px 15px 5px;
+    padding: 15px 15px 5px;
 
     h2 {
-      font-size: $banner-title-font-size;
+      font-size: $gallery-title-font-size;
       font-weight: bold;
 
       a {
         color: inherit;
-
-        &:hover {
-          text-decoration: none;
-        }
       }
     }
   }
@@ -166,7 +162,6 @@
   a {
     display: block;
     padding: 20px;
-    font-size: 12.5px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -218,7 +213,7 @@
     background-color: $grey;
 
     h3 {
-      font-size: 12.5px;
+      font-size: $h3-font-size;
       color: $text-black;
       text-transform: uppercase;
       margin-bottom: 5px;
@@ -241,7 +236,6 @@
   }
 
   .link {
-    font-size: 12.5px;
     font-style: italic;
     color: $red;
   }
@@ -254,6 +248,7 @@
   th, td {
     padding: 10px 15px;
     color: $text-black;
+    font-size: $h3-font-size;
 
     &.logo-in {
       padding: 10px 0;
@@ -364,7 +359,6 @@
   .title-team {
     background-color: $grey-light;
     padding: 0 5px;
-    font-size: 12.5px;
     font-weight: bold;
     margin: 0;
   }
@@ -384,7 +378,7 @@
 
       h2 {
         margin-bottom: 0;
-        font-size: 34px;
+        font-size: $box-score-team-font-size;
       }
     }
   }
@@ -408,7 +402,6 @@
     }
 
     h3 {
-      font-size: 12.5px;
       text-transform: uppercase;
       font-weight: bold;
       margin-bottom: 8px;
@@ -459,12 +452,12 @@
       @include clearfix-cs;
 
       h2 {
-        font-size: 14px;
+        font-size: $h3-font-size;
         margin-bottom: 0;
       }
 
       h3 {
-        font-size: 12.5px;
+        font-size: $box-score-team-font-size;
         font-weight: bold;
         margin-bottom: 5px;
       }
@@ -481,7 +474,7 @@
         }
 
         .score {
-          font-size: 35px;
+          font-size: $box-score-team-font-size;
           color: $text-black;
           font-weight: bold;
           line-height: 1;
@@ -490,6 +483,7 @@
 
       .name-pf {
         color: $text-black;
+        display: inline-block;
       }
     }
 
@@ -512,26 +506,28 @@
       }
     }
 
+    .tab-score {
+      margin-top: 10px;
+    }
     .nav-tabs {
       padding-left: 15px;
       background: $white;
+      border: 0;
 
       > li > a {
         @include border-radius-circle(0);
-
-        font-size: 12.5px;
         text-transform: uppercase;
         color: $text-black;
         font-weight: bold;
-        background: url("../images/bg-grey-light.png") repeat 0 0;
         padding: 20px 15px 18px;
         line-height: 1;
-        border: 1px solid $grey-dark;
         border-left: none;
+        border: 0;
       }
 
       li {
         margin-right: -2px;
+        margin-bottom: 0;
 
         &.active {
           a {
@@ -539,18 +535,12 @@
             color: $white;
           }
         }
-
-        &:first-child {
-          a {
-            border-left: 1px solid $grey-dark;
-          }
-        }
       }
     }
 
     .tab-content {
       background-color: $white;
-      min-height: 600px;
+      //min-height: 600px;
 
       table {
         width: 100%;
@@ -561,7 +551,7 @@
       }
 
       th, td {
-        padding: 20px 5px;
+        padding: 10px 5px;
 
         &:first-child {
           padding-left: 20px;
@@ -580,9 +570,5 @@
         }
       }
     }
-  }
-
-  footer {
-    border-top: 4px solid $red;
   }
 }

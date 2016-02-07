@@ -153,7 +153,7 @@ body, html {
   font-family: "Arvo", serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 12.5px;
+  font-size: 14px;
   background-color: #ffffff; }
 
 *:hover, *:focus {
@@ -380,21 +380,18 @@ header .form-search {
         content: ""; }
 
 .banner .info {
-  padding: 20px 15px 5px; }
+  padding: 15px 15px 5px; }
   .banner .info h2 {
     font-size: 25px;
     font-weight: bold; }
     .banner .info h2 a {
       color: inherit; }
-      .banner .info h2 a:hover {
-        text-decoration: none; }
 
 .btn-link {
   margin-bottom: 24px; }
   .btn-link a {
     display: block;
     padding: 20px;
-    font-size: 12.5px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold; }
@@ -424,7 +421,7 @@ header .form-search {
     padding: 12px 8px 12px;
     background-color: #eeeeee; }
     .block .heading h3 {
-      font-size: 12.5px;
+      font-size: 16px;
       color: #3a3a3a;
       text-transform: uppercase;
       margin-bottom: 5px;
@@ -438,7 +435,6 @@ header .form-search {
     background-color: #ffffff;
     padding: 12px 8px 12px; }
   .block .link {
-    font-size: 12.5px;
     font-style: italic;
     color: #d12229; }
 
@@ -447,7 +443,8 @@ header .form-search {
   background-color: #eeeeee; }
   .table-record th, .table-record td {
     padding: 10px 15px;
-    color: #3a3a3a; }
+    color: #3a3a3a;
+    font-size: 16px; }
     .table-record th.logo-in, .table-record td.logo-in {
       padding: 10px 0; }
     .table-record th.record, .table-record td.record {
@@ -518,7 +515,6 @@ header .form-search {
   .table-score .title-team {
     background-color: #f3f3f3;
     padding: 0 5px;
-    font-size: 12.5px;
     font-weight: bold;
     margin: 0; }
   .table-score .info-teams {
@@ -543,7 +539,6 @@ header .form-search {
       .table-score .info-table-score table td:nth-child(1) {
         padding-left: 0; }
     .table-score .info-table-score h3 {
-      font-size: 12.5px;
       text-transform: uppercase;
       font-weight: bold;
       margin-bottom: 8px; }
@@ -576,10 +571,10 @@ header .form-search {
     display: table;
     content: ""; }
   .profile-page #main .top-bar h2 {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0; }
   .profile-page #main .top-bar h3 {
-    font-size: 12.5px;
+    font-size: 34px;
     font-weight: bold;
     margin-bottom: 5px; }
   .profile-page #main .top-bar .logo-pf {
@@ -591,12 +586,13 @@ header .form-search {
       vertical-align: sub;
       margin-right: 10px; }
     .profile-page #main .top-bar .logo-pf .score {
-      font-size: 35px;
+      font-size: 34px;
       color: #3a3a3a;
       font-weight: bold;
       line-height: 1; }
   .profile-page #main .top-bar .name-pf {
-    color: #3a3a3a; }
+    color: #3a3a3a;
+    display: inline-block; }
 .profile-page #main .info {
   background: url("../images/bg-info.png") no-repeat right 12px top 0 #f3f3f3;
   padding: 15px 15px 12px;
@@ -614,46 +610,43 @@ header .form-search {
     color: #3a3a3a;
     line-height: 1.3;
     margin-bottom: 7px; }
+.profile-page #main .tab-score {
+  margin-top: 10px; }
 .profile-page #main .nav-tabs {
   padding-left: 15px;
-  background: #ffffff; }
+  background: #ffffff;
+  border: 0; }
   .profile-page #main .nav-tabs > li > a {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    font-size: 12.5px;
     text-transform: uppercase;
     color: #3a3a3a;
     font-weight: bold;
-    background: url("../images/bg-grey-light.png") repeat 0 0;
     padding: 20px 15px 18px;
     line-height: 1;
-    border: 1px solid #dadada;
-    border-left: none; }
+    border-left: none;
+    border: 0; }
   .profile-page #main .nav-tabs li {
-    margin-right: -2px; }
+    margin-right: -2px;
+    margin-bottom: 0; }
     .profile-page #main .nav-tabs li.active a {
       background: #d12229;
       color: #ffffff; }
-    .profile-page #main .nav-tabs li:first-child a {
-      border-left: 1px solid #dadada; }
 .profile-page #main .tab-content {
-  background-color: #ffffff;
-  min-height: 600px; }
+  background-color: #ffffff; }
   .profile-page #main .tab-content table {
     width: 100%; }
   .profile-page #main .tab-content th {
     background-color: #d12229; }
   .profile-page #main .tab-content th, .profile-page #main .tab-content td {
-    padding: 20px 5px; }
+    padding: 10px 5px; }
     .profile-page #main .tab-content th:first-child, .profile-page #main .tab-content td:first-child {
       padding-left: 20px; }
   .profile-page #main .tab-content td {
     color: #3a3a3a; }
   .profile-page #main .tab-content tr:nth-child(2n+1) td {
     background-color: #f3f3f3; }
-.profile-page footer {
-  border-top: 4px solid #d12229; }
 
 footer {
   padding-top: 20px;

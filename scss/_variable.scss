@@ -6,12 +6,11 @@ $grey: #eeeeee; // Primarily for box_score table shading
 $text-black: #3a3a3a;
 
 // FONT SIZES
-$header-font-size: 18px; // Top links
-$footer-font-size: 16px; // Footer titles (ABOUT, SITE MAP, SOCIAL MEDIA)
-$banner-title-font-size: 25px; // Title size for gallery
-
-
-
+$global-font-size: 14px;
+$nav-font-size: 18px; // Top links
+$gallery-title-font-size: 25px; // Title size for gallery
+$h3-font-size: 16px; // News titles, footer titles, record table
+$box-score-team-font-size: 34px;
 
 
 
@@ -24,7 +23,7 @@ $banner-title-font-size: 25px; // Title size for gallery
 $grey-light: lighten($grey, 2%);
 $grey-dark: darken($grey, 8%); 
 $text-grey: lighten($text-black, 40%); // Score module team name color
-$header-link: darken($red, 10%); // Header link, slightly darker than theme color
+$nav-link: darken($red, 10%); // Header link, slightly darker than theme color
 
 
 

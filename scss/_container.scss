@@ -1,34 +1,26 @@
-.container {
-  @media (min-width: 1361px) {
-    width: 1230px;
-  }
-}
-
 #main {
   background-color: $black;
   color: $white;
+}
 
-  .main-content {
-    margin-top: 10px;
-  }
-
-  p {
-  }
+.main-content {
+  margin-top: 15px;
 }
 
 .form-game-cal {
-  padding: 0 6px;
-  margin-top: 13px;
+  padding: 0 9px;
+  margin-top: 22px;
 }
 
 .game-box {
-  background-color: $grey;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 
   ul {
     padding: 1px 0 0 117px;
     margin: 0;
     position: relative;
+    background-color: $grey;
 
     @include clearfix-cs;
   }
@@ -37,19 +29,15 @@
     float: left;
     list-style-type: none;
     padding: 7px 7px 6px;
-    width: 107px;
+    width: 102px;
     margin: 0 0 0 0;
     border-right: 2px solid transparent;
     border-left: 2px solid transparent;
-    //font-size: 12.5px;
 
     a {
       display: block;
     }
 
-    @media (max-width: 1360px) {
-      width: 102px;
-    }
 
     span {
       vertical-align: middle;
@@ -72,13 +60,6 @@
       background-color: $white;
     }
 
-    &:nth-child(2), &:nth-child(12) {
-      width: 120px;
-
-      @media (max-width: 1360px) {
-        width: 105px;
-      }
-    }
 
     &.border-l {
       border-left: 2px solid $global-theme-color;
@@ -187,12 +168,8 @@
   }
 }
 
-.row {
-  margin: 0 -11px;
-}
-
 .col-l, .col-r {
-  padding: 0 11px;
+  
 }
 
 .block {
@@ -321,6 +298,7 @@
     .top-bar {
       background-color: $global-theme-color;
       padding: 10px 15px 2px;
+      min-height: 74px;
 
       ul {
         padding: 0;
@@ -329,6 +307,15 @@
       li {
         display: inline-table;
         padding-right: 30px;
+
+        &:first-child {
+          float: left;
+        }
+
+        h2 {
+          font-size: $box-score-team-font-size - 3px;
+          line-height:50px;
+        }
 
         p {
           margin-bottom: 5px;

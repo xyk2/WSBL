@@ -11,9 +11,8 @@
   .main-content {
     margin-top: 10px;
   }
-  
+
   p {
-    font-size: 12.5px;
   }
 }
 
@@ -42,7 +41,7 @@
     margin: 0 0 0 0;
     border-right: 2px solid transparent;
     border-left: 2px solid transparent;
-    font-size: 12.5px;
+    //font-size: 12.5px;
 
     a {
       display: block;
@@ -147,7 +146,7 @@
     padding: 20px 15px 5px;
 
     h2 {
-      font-size: 20.83px;
+      font-size: $banner-title-font-size;
       font-weight: bold;
 
       a {

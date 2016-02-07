@@ -292,8 +292,6 @@ header .form-search {
   color: #ffffff; }
   #main .main-content {
     margin-top: 10px; }
-  #main p {
-    font-size: 12.5px; }
 
 .form-game-cal {
   padding: 0 6px;
@@ -319,8 +317,7 @@ header .form-search {
     width: 107px;
     margin: 0 0 0 0;
     border-right: 2px solid transparent;
-    border-left: 2px solid transparent;
-    font-size: 12.5px; }
+    border-left: 2px solid transparent; }
     .game-box li a {
       display: block; }
     @media (max-width: 1360px) {
@@ -385,7 +382,7 @@ header .form-search {
 .banner .info {
   padding: 20px 15px 5px; }
   .banner .info h2 {
-    font-size: 20.83px;
+    font-size: 25px;
     font-weight: bold; }
     .banner .info h2 a {
       color: inherit; }
@@ -662,9 +659,6 @@ footer {
   padding-top: 20px;
   background-color: #eeeeee;
   color: #3a3a3a; }
-  @media (max-width: 767px) {
-    footer {
-      text-align: center; } }
   footer .main-f {
     padding-bottom: 10px; }
   footer h3 {
@@ -793,7 +787,10 @@ footer {
   .profile-page #main .info {
     -moz-background-image: none;
     -webkit-background-image: none;
-    background-image: none; } }
+    background-image: none; }
+
+  footer {
+    text-align: center; } }
 @media (max-width: 550px) {
   .menu-box li {
     width: 25%; }

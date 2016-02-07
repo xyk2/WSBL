@@ -33,8 +33,6 @@
 
   li {
     float: left;
-
-    //display: inline-block;
     list-style-type: none;
     padding: 7px 7px 6px;
     width: 107px;
@@ -322,32 +320,28 @@
   .main-content {
     background-color: $white;
     padding-bottom: 60px;
-  }
 
-  .paddingtop2 {
-    padding-top: 2px;
+    .top-bar {
+      background-color: $red;
+      padding: 10px 15px 2px;
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        display: inline-table;
+        padding-right: 30px;
+
+        p {
+          margin-bottom: 5px;
+        }
+      }
+    }
   }
 
   footer {
     border-top: 4px solid $red;
-  }
-
-  .top-bar {
-    background-color: $red;
-    padding: 10px 15px 2px;
-
-    ul {
-      padding: 0;
-    }
-
-    li {
-      display: inline-table;
-      padding-right: 30px;
-
-      p {
-        margin-bottom: 5px;
-      }
-    }
   }
 }
 
@@ -448,6 +442,11 @@
 .spacing20 {
   height: 20px;
 }
+.paddingtop2 {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
 
 .profile-page {
   #main {

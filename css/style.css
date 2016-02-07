@@ -490,20 +490,18 @@ header .form-search {
 .boxscore-page .main-content {
   background-color: #ffffff;
   padding-bottom: 60px; }
-.boxscore-page .paddingtop2 {
-  padding-top: 2px; }
+  .boxscore-page .main-content .top-bar {
+    background-color: #d12229;
+    padding: 10px 15px 2px; }
+    .boxscore-page .main-content .top-bar ul {
+      padding: 0; }
+    .boxscore-page .main-content .top-bar li {
+      display: inline-table;
+      padding-right: 30px; }
+      .boxscore-page .main-content .top-bar li p {
+        margin-bottom: 5px; }
 .boxscore-page footer {
   border-top: 4px solid #d12229; }
-.boxscore-page .top-bar {
-  background-color: #d12229;
-  padding: 10px 15px 2px; }
-  .boxscore-page .top-bar ul {
-    padding: 0; }
-  .boxscore-page .top-bar li {
-    display: inline-table;
-    padding-right: 30px; }
-    .boxscore-page .top-bar li p {
-      margin-bottom: 5px; }
 
 .table-score {
   color: #171724; }
@@ -564,6 +562,10 @@ header .form-search {
 
 .spacing20 {
   height: 20px; }
+
+.paddingtop2 {
+  padding-top: 15px;
+  padding-bottom: 20px; }
 
 .profile-page #main .top-bar {
   background-color: #c4c4c4;
@@ -655,18 +657,20 @@ header .form-search {
   border-top: 4px solid #d12229; }
 
 footer {
-  padding-top: 30px;
+  padding-top: 20px;
   background-color: #eeeeee;
   color: #2a2a2a; }
   @media (max-width: 767px) {
     footer {
       text-align: center; } }
+  footer .main-f {
+    padding-bottom: 10px; }
   footer h3 {
-    font-size: 12.5px;
+    font-size: 16px;
     color: #2a2a2a;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 10px; }
+    margin-bottom: 5px; }
   footer ul {
     padding: 0; }
   footer li {

@@ -14,7 +14,7 @@ body, html {
 
 header {
   .top-bar {
-    background-color: $red;
+    background-color: $global-theme-color;
 
     color: $white;
     height: 49px;
@@ -43,9 +43,9 @@ header {
   }
 
   .logo {
-    background-color: $red;
+    background-color: $global-theme-color;
     margin: 0;
-    padding: 12px 8px 13px;
+    padding: 7px 32px 8px;
     position: absolute;
     left: 0;
 
@@ -53,6 +53,10 @@ header {
       & {
         padding-bottom: 12px;
       }
+    }
+
+    img {
+      max-height: 49px;
     }
   }
 
@@ -87,7 +91,7 @@ header {
       }
 
       &.active {
-        background-color: $red;
+        background-color: $global-theme-color;
 
         a {
           color: $white;

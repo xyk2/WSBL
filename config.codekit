@@ -599,6 +599,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/wsbl-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.40037e+06,
+		"inputAbbreviatedPath": "\/images\/wsbl-logo.png",
+		"outputAbbreviatedPath": "\/images\/wsbl-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wsbl-logo_200px.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41697,
+		"inputAbbreviatedPath": "\/images\/wsbl-logo_200px.png",
+		"outputAbbreviatedPath": "\/images\/wsbl-logo_200px.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,

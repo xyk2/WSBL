@@ -33,14 +33,14 @@
     text-align: center;
   }
   .ui-datepicker-close{
-    background-color: $red;
+    background-color: $global-theme-color;
     color: $white;
     border: none;
   }
   button{
     &.ui-datepicker-current{
       background-color: $grey;
-      color: $red;
+      color: $global-theme-color;
       border: none;
       display: none;
     }

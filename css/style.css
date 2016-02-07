@@ -160,7 +160,7 @@ body, html {
   outline: none !important; }
 
 header .top-bar {
-  background-color: #d12229;
+  background-color: #116AB7;
   color: #ffffff;
   height: 49px; }
   header .top-bar .social {
@@ -176,14 +176,16 @@ header .top-bar {
       header .top-bar .social li a:hover img {
         opacity: 0.8; }
 header .logo {
-  background-color: #d12229;
+  background-color: #116AB7;
   margin: 0;
-  padding: 12px 8px 13px;
+  padding: 7px 32px 8px;
   position: absolute;
   left: 0; }
 @-moz-document url-prefix() {
   header .logo {
     padding-bottom: 12px; } }
+  header .logo img {
+    max-height: 49px; }
 header .main-bar {
   height: 64px; }
 header .navigation {
@@ -200,10 +202,10 @@ header .navigation {
       header .navigation li {
         padding: 21px 26px 18px; } }
     header .navigation li a {
-      color: #a51b20;
+      color: #0d4f88;
       font-size: 18px; }
     header .navigation li.active {
-      background-color: #d12229; }
+      background-color: #116AB7; }
       header .navigation li.active a {
         color: #ffffff; }
 header .form-search {
@@ -272,12 +274,12 @@ header .form-search {
     float: none;
     text-align: center; }
   #ui-datepicker-div .ui-datepicker-close {
-    background-color: #d12229;
+    background-color: #116AB7;
     color: #ffffff;
     border: none; }
   #ui-datepicker-div button.ui-datepicker-current {
     background-color: #eeeeee;
-    color: #d12229;
+    color: #116AB7;
     border: none;
     display: none; }
   #ui-datepicker-div .ui-datepicker-buttonpane {
@@ -342,12 +344,12 @@ header .form-search {
         .game-box li:nth-child(2), .game-box li:nth-child(12) {
           width: 105px; } }
     .game-box li.border-l {
-      border-left: 2px solid #d12229;
+      border-left: 2px solid #116AB7;
       font-weight: bold; }
       .game-box li.border-l span {
         color: #3a3a3a; }
     .game-box li.border-r {
-      border-right: 2px solid #d12229;
+      border-right: 2px solid #116AB7;
       font-weight: bold; }
       .game-box li.border-r span {
         color: #3a3a3a; }
@@ -365,9 +367,9 @@ header .form-search {
     display: block;
     margin: 0 -2px; }
     .game-box .menu-box.two .item.border-l {
-      border-left: 2px solid #d12229; }
+      border-left: 2px solid #116AB7; }
     .game-box .menu-box.two .item.border-r {
-      border-right: 2px solid #d12229; }
+      border-right: 2px solid #116AB7; }
   .game-box .menu-box.two li {
     padding: 0; }
     .game-box .menu-box.two li a {
@@ -399,7 +401,7 @@ header .form-search {
       text-decoration: none;
       outline: none; }
   .btn-link a {
-    background-color: #d12229;
+    background-color: #116AB7;
     color: #ffffff; }
   .btn-link.grey a {
     background-color: #dadada;
@@ -436,7 +438,7 @@ header .form-search {
     padding: 12px 8px 12px; }
   .block .link {
     font-style: italic;
-    color: #d12229; }
+    color: #116AB7; }
 
 .table-record {
   width: 100%;
@@ -455,7 +457,7 @@ header .form-search {
     background-color: #dadada;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-weight: normal; }
+    font-weight: bold; }
   .table-record td {
     border-bottom: 1px solid #dadada; }
 
@@ -472,9 +474,9 @@ header .form-search {
 #menu-mb {
   display: none; }
   #menu-mb.ham {
-    border: 1px solid #d12229; }
+    border: 1px solid #116AB7; }
     #menu-mb.ham .line-ham {
-      background-color: #d12229; }
+      background-color: #116AB7; }
 
 #menu-game-box {
   display: none; }
@@ -487,7 +489,7 @@ header .form-search {
   background-color: #ffffff;
   padding-bottom: 60px; }
   .boxscore-page .main-content .top-bar {
-    background-color: #d12229;
+    background-color: #116AB7;
     padding: 10px 15px 2px; }
     .boxscore-page .main-content .top-bar ul {
       padding: 0; }
@@ -496,8 +498,6 @@ header .form-search {
       padding-right: 30px; }
       .boxscore-page .main-content .top-bar li p {
         margin-bottom: 5px; }
-.boxscore-page footer {
-  border-top: 4px solid #d12229; }
 
 .table-score {
   color: #3a3a3a; }
@@ -631,14 +631,14 @@ header .form-search {
     margin-right: -2px;
     margin-bottom: 0; }
     .profile-page #main .nav-tabs li.active a {
-      background: #d12229;
+      background: #116AB7;
       color: #ffffff; }
 .profile-page #main .tab-content {
   background-color: #ffffff; }
   .profile-page #main .tab-content table {
     width: 100%; }
   .profile-page #main .tab-content th {
-    background-color: #d12229; }
+    background-color: #116AB7; }
   .profile-page #main .tab-content th, .profile-page #main .tab-content td {
     padding: 10px 5px; }
     .profile-page #main .tab-content th:first-child, .profile-page #main .tab-content td:first-child {
@@ -674,7 +674,7 @@ footer {
     footer .social li a:hover {
       opacity: 0.8; }
   footer .copyright {
-    background-color: #d12229;
+    background-color: #116AB7;
     padding: 15px 0 5px; }
     footer .copyright p {
       color: #ffffff; }
@@ -807,7 +807,7 @@ footer {
       padding: 15px 5px; }
     .profile-page #main .nav-tabs li.active a {
       background: transparent;
-      color: #d12229; } }
+      color: #116AB7; } }
 @media (max-width: 480px) {
   .menu-box li {
     width: 50%; }

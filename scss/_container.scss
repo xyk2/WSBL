@@ -81,7 +81,7 @@
     }
 
     &.border-l {
-      border-left: 2px solid $red;
+      border-left: 2px solid $global-theme-color;
       font-weight: bold;
 
       span {
@@ -90,7 +90,7 @@
     }
 
     &.border-r {
-      border-right: 2px solid $red;
+      border-right: 2px solid $global-theme-color;
       font-weight: bold;
 
       span {
@@ -121,11 +121,11 @@
       margin: 0 -2px;
 
       &.border-l {
-        border-left: 2px solid $red;
+        border-left: 2px solid $global-theme-color;
       }
 
       &.border-r {
-        border-right: 2px solid $red;
+        border-right: 2px solid $global-theme-color;
       }
     }
 
@@ -174,7 +174,7 @@
 
   & {
     a {
-      background-color: $red;
+      background-color: $global-theme-color;
       color: $white;
     }
   }
@@ -237,7 +237,7 @@
 
   .link {
     font-style: italic;
-    color: $red;
+    color: $global-theme-color;
   }
 }
 
@@ -267,7 +267,7 @@
     background-color: $grey-dark;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-weight: normal;
+    font-weight: bold;
   }
 
   td {
@@ -292,10 +292,10 @@
   display: none;
 
   &.ham {
-    border: 1px solid $red;
+    border: 1px solid $global-theme-color;
 
     .line-ham {
-      background-color: $red;
+      background-color: $global-theme-color;
 
     }
   }
@@ -319,7 +319,7 @@
     padding-bottom: 60px;
 
     .top-bar {
-      background-color: $red;
+      background-color: $global-theme-color;
       padding: 10px 15px 2px;
 
       ul {
@@ -335,10 +335,6 @@
         }
       }
     }
-  }
-
-  footer {
-    border-top: 4px solid $red;
   }
 }
 
@@ -531,7 +527,7 @@
 
         &.active {
           a {
-            background: $red;
+            background: $global-theme-color;
             color: $white;
           }
         }
@@ -547,7 +543,7 @@
       }
 
       th {
-        background-color: $red;
+        background-color: $global-theme-color;
       }
 
       th, td {

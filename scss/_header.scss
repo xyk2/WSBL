@@ -82,8 +82,8 @@ header {
       }
 
       a {
-        color: $text-red-nav;
-        font-size: 18px;
+        color: $header-link;
+        font-size: $header-font-size;
       }
 
       &.active {

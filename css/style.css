@@ -200,7 +200,7 @@ header .navigation {
       header .navigation li {
         padding: 21px 26px 18px; } }
     header .navigation li a {
-      color: #a23535;
+      color: #a51b20;
       font-size: 18px; }
     header .navigation li.active {
       background-color: #d12229; }
@@ -245,7 +245,7 @@ header .form-search {
 #datepicker {
   width: 94px;
   height: 26px;
-  color: #979797;
+  color: #a0a0a0;
   text-transform: uppercase;
   font-size: 12.5px;
   padding: 0 8px;
@@ -290,6 +290,8 @@ header .form-search {
 #main {
   background-color: #2a2a2a;
   color: #ffffff; }
+  #main .main-content {
+    margin-top: 10px; }
   #main p {
     font-size: 12.5px; }
 
@@ -299,8 +301,7 @@ header .form-search {
 
 .game-box {
   background-color: #eeeeee;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 10px; }
   .game-box ul {
     padding: 1px 0 0 117px;
     margin: 0;
@@ -328,7 +329,7 @@ header .form-search {
     .game-box li span {
       vertical-align: middle;
       display: inline-block;
-      color: #979797; }
+      color: #a0a0a0; }
     .game-box li.calendar {
       width: 117px;
       position: absolute;
@@ -347,12 +348,12 @@ header .form-search {
       border-left: 2px solid #d12229;
       font-weight: bold; }
       .game-box li.border-l span {
-        color: #2a2a2a; }
+        color: #3a3a3a; }
     .game-box li.border-r {
       border-right: 2px solid #d12229;
       font-weight: bold; }
       .game-box li.border-r span {
-        color: #2a2a2a; }
+        color: #3a3a3a; }
   .game-box .logo-in {
     float: left; }
   .game-box .name-in {
@@ -407,8 +408,8 @@ header .form-search {
     background-color: #d12229;
     color: #ffffff; }
   .btn-link.grey a {
-    background-color: #c4c4c4;
-    color: #2a2a2a; }
+    background-color: #dadada;
+    color: #3a3a3a; }
 
 .row {
   margin: 0 -11px; }
@@ -419,7 +420,7 @@ header .form-search {
 .block {
   margin-bottom: 22px; }
   .block p {
-    color: #979797; }
+    color: #a0a0a0; }
   .block .image img, .block .video img {
     width: 100%; }
   .block .heading {
@@ -427,7 +428,7 @@ header .form-search {
     background-color: #eeeeee; }
     .block .heading h3 {
       font-size: 12.5px;
-      color: #2a2a2a;
+      color: #3a3a3a;
       text-transform: uppercase;
       margin-bottom: 5px;
       font-weight: bold; }
@@ -449,7 +450,7 @@ header .form-search {
   background-color: #eeeeee; }
   .table-record th, .table-record td {
     padding: 10px 15px;
-    color: #2a2a2a; }
+    color: #3a3a3a; }
     .table-record th.logo-in, .table-record td.logo-in {
       padding: 10px 0; }
     .table-record th.record, .table-record td.record {
@@ -457,12 +458,12 @@ header .form-search {
     .table-record th.no, .table-record td.no {
       text-align: center; }
   .table-record th {
-    background-color: #c4c4c4;
+    background-color: #dadada;
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: normal; }
   .table-record td {
-    border-bottom: 1px solid #c4c4c4; }
+    border-bottom: 1px solid #dadada; }
 
 .ham {
   padding: 5px 5px 0;
@@ -505,7 +506,7 @@ header .form-search {
   border-top: 4px solid #d12229; }
 
 .table-score {
-  color: #171724; }
+  color: #3a3a3a; }
   .table-score ul {
     padding: 0;
     overflow: hidden; }
@@ -518,7 +519,7 @@ header .form-search {
     display: inline-table;
     padding-right: 35px; }
   .table-score .title-team {
-    background-color: #ececec;
+    background-color: #f3f3f3;
     padding: 0 5px;
     font-size: 12.5px;
     font-weight: bold;
@@ -528,7 +529,7 @@ header .form-search {
     margin: 0; }
     .table-score .info-teams .image {
       float: left;
-      background-color: #ececec;
+      background-color: #f3f3f3;
       margin-right: 10px; }
     .table-score .info-teams .content {
       float: right; }
@@ -538,7 +539,7 @@ header .form-search {
   .table-score .info-table-score {
     padding: 15px; }
     .table-score .info-table-score table th {
-      background-color: #ececec;
+      background-color: #f3f3f3;
       padding: 2px 15px; }
     .table-score .info-table-score table td {
       padding: 5px 15px; }
@@ -557,9 +558,9 @@ header .form-search {
       padding: 4px 15px;
       text-align: left; }
     .table-score .table-team-info th {
-      background-color: #c4c4c4; }
+      background-color: #dadada; }
     .table-score .table-team-info tr:nth-child(2n) td {
-      background-color: #ececec; }
+      background-color: #f3f3f3; }
 
 .spacing20 {
   height: 20px; }
@@ -569,7 +570,7 @@ header .form-search {
   padding-bottom: 20px; }
 
 .profile-page #main .top-bar {
-  background-color: #c4c4c4;
+  background-color: #dadada;
   padding: 15px;
   overflow: hidden; }
   .profile-page #main .top-bar:after {
@@ -594,15 +595,15 @@ header .form-search {
       margin-right: 10px; }
     .profile-page #main .top-bar .logo-pf .score {
       font-size: 35px;
-      color: #2a2a2a;
+      color: #3a3a3a;
       font-weight: bold;
       line-height: 1; }
   .profile-page #main .top-bar .name-pf {
-    color: #2a2a2a; }
+    color: #3a3a3a; }
 .profile-page #main .info {
-  background: url("../images/bg-info.png") no-repeat right 12px top 0 #ececec;
+  background: url("../images/bg-info.png") no-repeat right 12px top 0 #f3f3f3;
   padding: 15px 15px 12px;
-  color: #2a2a2a;
+  color: #3a3a3a;
   overflow: hidden; }
   .profile-page #main .info:after {
     clear: both; }
@@ -613,7 +614,7 @@ header .form-search {
     float: left;
     margin-right: 15px; }
   .profile-page #main .info p {
-    color: #2a2a2a;
+    color: #3a3a3a;
     line-height: 1.3;
     margin-bottom: 7px; }
 .profile-page #main .nav-tabs {
@@ -625,12 +626,12 @@ header .form-search {
     border-radius: 0;
     font-size: 12.5px;
     text-transform: uppercase;
-    color: #2a2a2a;
+    color: #3a3a3a;
     font-weight: bold;
     background: url("../images/bg-grey-light.png") repeat 0 0;
     padding: 20px 15px 18px;
     line-height: 1;
-    border: 1px solid #c4c4c4;
+    border: 1px solid #dadada;
     border-left: none; }
   .profile-page #main .nav-tabs li {
     margin-right: -2px; }
@@ -638,7 +639,7 @@ header .form-search {
       background: #d12229;
       color: #ffffff; }
     .profile-page #main .nav-tabs li:first-child a {
-      border-left: 1px solid #c4c4c4; }
+      border-left: 1px solid #dadada; }
 .profile-page #main .tab-content {
   background-color: #ffffff;
   min-height: 600px; }
@@ -651,16 +652,16 @@ header .form-search {
     .profile-page #main .tab-content th:first-child, .profile-page #main .tab-content td:first-child {
       padding-left: 20px; }
   .profile-page #main .tab-content td {
-    color: #2a2a2a; }
+    color: #3a3a3a; }
   .profile-page #main .tab-content tr:nth-child(2n+1) td {
-    background-color: #ececec; }
+    background-color: #f3f3f3; }
 .profile-page footer {
   border-top: 4px solid #d12229; }
 
 footer {
   padding-top: 20px;
   background-color: #eeeeee;
-  color: #2a2a2a; }
+  color: #3a3a3a; }
   @media (max-width: 767px) {
     footer {
       text-align: center; } }
@@ -668,7 +669,7 @@ footer {
     padding-bottom: 10px; }
   footer h3 {
     font-size: 16px;
-    color: #2a2a2a;
+    color: #3a3a3a;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 5px; }

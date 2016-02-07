@@ -8,6 +8,10 @@
   background-color: $black;
   color: $white;
 
+  .main-content {
+    margin-top: 10px;
+  }
+  
   p {
     font-size: 12.5px;
   }
@@ -21,7 +25,6 @@
 .game-box {
   background-color: $grey;
   margin-top: 10px;
-  margin-bottom: 10px;
 
   ul {
     padding: 1px 0 0 117px;
@@ -184,8 +187,8 @@
 
   &.grey {
     a {
-      background-color: $grey-b;
-      color: $black;
+      background-color: $grey-dark;
+      color: $text-black;
     }
   }
 }
@@ -267,14 +270,14 @@
   }
 
   th {
-    background-color: $grey-b;
+    background-color: $grey-dark;
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: normal;
   }
 
   td {
-    border-bottom: 1px solid $grey-b;
+    border-bottom: 1px solid $grey-dark;
   }
 }
 
@@ -346,7 +349,7 @@
 }
 
 .table-score {
-  color: $text-black-score-p;
+  color: $text-black;
 
   ul {
     padding: 0;
@@ -426,7 +429,7 @@
     }
 
     th {
-      background-color: $grey-b;
+      background-color: $grey-dark;
     }
 
     tr {
@@ -451,7 +454,7 @@
 .profile-page {
   #main {
     .top-bar {
-      background-color: $grey-b;
+      background-color: $grey-dark;
       padding: 15px;
 
       @include clearfix-cs;
@@ -524,7 +527,7 @@
         background: url("../images/bg-grey-light.png") repeat 0 0;
         padding: 20px 15px 18px;
         line-height: 1;
-        border: 1px solid $grey-b;
+        border: 1px solid $grey-dark;
         border-left: none;
       }
 
@@ -534,13 +537,13 @@
         &.active {
           a {
             background: $red;
-            color: $text-white;
+            color: $white;
           }
         }
 
         &:first-child {
           a {
-            border-left: 1px solid $grey-b;
+            border-left: 1px solid $grey-dark;
           }
         }
       }

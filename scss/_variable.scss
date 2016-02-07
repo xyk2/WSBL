@@ -1,16 +1,17 @@
 $font-main: "Arvo", serif;
-$black: #2a2a2a; // For background, link text, footer text
+$black: #2a2a2a; // For background
 $white: #ffffff;
 $red: #d12229;
-$bg-red: #d12229;
-$red-border: #d1232a;
-$grey: #eeeeee;
-$grey-light: #ececec;
-$grey-b: #c4c4c4;
+$grey: #eeeeee; // Primarily for box_score table shading
+$text-black: #3a3a3a;
 
-$text-red: #d12229;
-$text-red-nav: #a23535;
-$text-grey: #979797;
-$text-black: #2a2a2a;
-$text-white: #ffffff;
-$text-black-score-p: #171724;
+// FONT SIZES
+$header-font-size: 18px;
+
+
+
+// AUTO GENERATED COLORING BASED ON ABOVE
+$grey-light: lighten($grey, 2%);
+$grey-dark: darken($grey, 8%); 
+$text-grey: lighten($text-black, 40%); // Score module team name color
+$header-link: darken($red, 10%); // Header link, slightly darker than theme color
